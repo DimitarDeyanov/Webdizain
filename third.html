@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html id="third">
+<head>
+        <link rel="stylesheet" href="design.css">
+        <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+        
+</head>
+<body >
+    <div id="nav">
+        <ul>
+          <li><a href="home.html">Начало</a></li>
+          <li><a href="second.html">Видове климатици</a></li>
+          <li><a href="third.html">Връзка със собственика</a></li>
+          <li>
+        </ul>
+        </div>
+        
+
+<main id="home">
+    
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <div id="map1" style="width:100%;height:400px;"></div>    
+    <script>
+        function myMap() {
+                    
+            var myLatLng = {lat: 42.687493, lng:23.342457};
+
+            var map1 = new google.maps.Map(document.getElementById("map1"),{
+                zoom: 15,
+                center: myLatLng
+            });
+    
+            var marker = new google.maps.Marker({
+                position: myLatLng,
+                map: map1,
+                title: 'Климатици.бг'
+            });
+
+            marker.setMap(map1);
+        }                
+    </script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAZJddtIlaLSsDQe1wseG5vAUNIO9d66rY&callback=myMap"></script>
+    <br>
+    <br>
+    <br>
+    
+
+</div>
+
+
+</main>
+
+</body>
+</html>
